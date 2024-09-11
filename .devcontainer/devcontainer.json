@@ -14,7 +14,7 @@
                 "usernamehw.errorlens",
                 "aaron-bond.better-comments",
                 "vsls-contrib.gitdoc",
-                "seunlanlege.action-buttons",
+                "seunlanlege.action-buttons"
             ],
             "settings": {
                 "apple-swift-format.path": [
@@ -40,6 +40,8 @@
                 },
                 "gitdoc.commitValidationLevel": "none",
                 "gitdoc.enabled": true,
+                "lldb.library": "/usr/lib/liblldb.so",
+                "lldb.launch.expressions": "native",
                 "workbench.colorTheme": "Default Light Modern",
                 "actionButtons": {
                     "commands": [
@@ -72,5 +74,6 @@
                 }
             }
         }
-    }
+    },
+    "postCreateCommand": "python3 fixpaths.py && rm fixpaths.py && swift build"
 }
