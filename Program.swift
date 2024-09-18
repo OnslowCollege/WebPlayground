@@ -1,5 +1,3 @@
-import Foundation
-
-let myString = "Potato".components(separatedBy: CharacterSet)
-
-print("Hello, world!")
+print("Enter your name:")
+let firstName = readLine()
+print(firstName)

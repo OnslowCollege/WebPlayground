@@ -3,7 +3,7 @@
         "accessLevel": "private"
     },
     "indentConditionalCompilationBlocks": true,
-    "indentSwitchCaseLabels": false,
+    "indentSwitchCaseLabels": true,
     "indentation": {
         "spaces": 4
     },
@@ -19,7 +19,7 @@
         ]
     },
     "prioritizeKeepingFunctionOutputTogether": false,
-    "respectsExistingLineBreaks": false,
+    "respectsExistingLineBreaks": true,
     "rules": {
         "AllPublicDeclarationsHaveDocumentation": true,
         "AlwaysUseLiteralForEmptyCollectionInit": true,
@@ -44,6 +44,7 @@
         "NoLeadingUnderscores": true,
         "NoParensAroundConditions": true,
         "NoVoidReturnOnFunctionSignature": true,
+        "OmitExplicitReturns": false,
         "OneCasePerLine": true,
         "OneVariableDeclarationPerLine": true,
         "OnlyOneTrailingClosureArgument": true,
@@ -61,6 +62,7 @@
         "ValidateDocumentationComments": true
     },
     "spacesAroundRangeFormationOperators": false,
+    "spacesBeforeEndOfLineComments": 2,
     "tabWidth": 2,
     "version": 1
 }

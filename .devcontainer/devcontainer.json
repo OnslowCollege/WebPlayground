@@ -47,23 +47,23 @@
                     "commands": [
                         {
                             "cwd": "${workspaceFolder}",
-                            "name": "$(run-all) Run project",
+                            "name": "$(run-all) Run",
                             "useVsCodeApi": true,
                             "command": "workbench.action.debug.start"
                         },
                         {
                             "cwd": "{workspaceFolder}",
-                            "name": "$(pencil) Format file",
+                            "name": "$(pencil) Reformat",
                             "useVsCodeApi": true,
                             "command": "editor.action.formatDocument"
                         },
                         {
-                            "name": "$(terminal-view-icon) New Terminal",
+                            "name": "$(terminal-view-icon) New Term",
                             "useVsCodeApi": true,
                             "command": "workbench.action.terminal.newInActiveWorkspace"
                         },
                         {
-                            "name": "$(terminal-kill) Kill all Terminals",
+                            "name": "$(terminal-kill) Kill Terms",
                             "useVsCodeApi": true,
                             "command": "workbench.action.terminal.killAll"
                         }

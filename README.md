@@ -6,11 +6,10 @@ Use this template to develop a text-based program in Swift 5.10 on a Linux host.
 
 This template includes:
 
-- Default SPM structure (`Sources/main.swift`)
 - Extensions to support Swift development
-- swift-format linter/formatter enabled to ensure code follows conventions
-- Mint to run external Swift-based software
-- Remi preinstalled for use with the OCGUI library
+- Support for debugging standalone Swift files
+- swift-format linter/formatter included (disabled by default)
+- Mint to install and run Swift-based software
 - Integration for diagrams.net (for files ending in `.drawio`)
 
 ## How to run your code
