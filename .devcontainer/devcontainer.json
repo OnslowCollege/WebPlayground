@@ -75,5 +75,5 @@
             }
         }
     },
-    "postCreateCommand": "python3 fixpaths.py && rm fixpaths.py && swift build"
+    "postCreateCommand": "python3 fixpaths.py && rm fixpaths.py"
 }
