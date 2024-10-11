@@ -48,7 +48,7 @@
                             "command": "workbench.action.debug.start"
                         },
                         {
-                            "cwd": "{workspaceFolder}",
+                            "cwd": "${workspaceFolder}",
                             "name": "$(pencil) Reformat",
                             "useVsCodeApi": false,
                             "command": "swift package plugin --allow-writing-to-package-directory swiftformat"
