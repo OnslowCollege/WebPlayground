@@ -1,10 +1,9 @@
 {
-    "image": "ghcr.io/onslowcollege/swifttemplate:latest",
+    "image": "swift:6.0-noble",
     "customizations": {
         "vscode": {
             "extensions": [
                 "sswg.swift-lang",
-                "vknabel.vscode-apple-swift-format",
                 "vadimcn.vscode-lldb",
                 "eamodio.gitlens",
                 "GitHub.vscode-pull-request-github",
@@ -17,9 +16,6 @@
                 "seunlanlege.action-buttons"
             ],
             "settings": {
-                "apple-swift-format.path": [
-                    "/root/.mint/bin/swift-format"
-                ],
                 "gitlens.showWhatsNewAfterUpgrades": false,
                 "gitlens.showWelcomeOnInstall": false,
                 "editor.wordWrap": "on",
@@ -54,8 +50,8 @@
                         {
                             "cwd": "{workspaceFolder}",
                             "name": "$(pencil) Reformat",
-                            "useVsCodeApi": true,
-                            "command": "editor.action.formatDocument"
+                            "useVsCodeApi": false,
+                            "command": "swift package plugin --allow-writing-to-package-directory swiftformat"
                         },
                         {
                             "name": "$(terminal-view-icon) New Term",
