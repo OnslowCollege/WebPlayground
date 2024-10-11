@@ -12,6 +12,24 @@
             "cwd": "${workspaceFolder:SwiftTemplate}",
             "breakpointMode": "path",
             "preLaunchTask": "Build Swift file"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftTemplate}/Template",
+            "name": "Debug Template (Template)",
+            "program": "${workspaceFolder:SwiftTemplate}/Template/.build/debug/Template",
+            "preLaunchTask": "swift: Build Debug Template (Template)"
+        },
+        {
+            "type": "swift-lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftTemplate}/Template",
+            "name": "Release Template (Template)",
+            "program": "${workspaceFolder:SwiftTemplate}/Template/.build/release/Template",
+            "preLaunchTask": "swift: Build Release Template (Template)"
         }
     ]
 }
