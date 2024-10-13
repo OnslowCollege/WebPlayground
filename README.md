@@ -31,6 +31,8 @@ When you create new projects, you must **create a new branch**. Create a branch 
 
 ## Adding project dependencies
 
+You can add libraries/frameworks written by other developers. For example, you can write code to  
+
 1. Open the `Package.swift` file
 2. Add your dependency line to the `dependencies` array.
    ```swift
