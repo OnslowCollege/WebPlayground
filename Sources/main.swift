@@ -5,5 +5,6 @@ import Foundation
 
 // Instructions:
 // 1. Create and new branch and switch to it.
-// 2. 
+// 2. Remove these comments and the code below.
+// 3. Write your code.
 print("Hello, world!")
