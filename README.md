@@ -31,7 +31,9 @@ When you create new projects, you must **create a new branch**. Create a branch 
 
 ## Adding project dependencies
 
-You can add libraries/frameworks written by other developers. For example, you can write code to  
+You can add libraries/frameworks written by other developers. For example, you can write code to connect to a database or write a graphical user interface.
+
+As an example, the default template comes with OnslowSwift
 
 1. Open the `Package.swift` file
 2. Add your dependency line to the `dependencies` array.
