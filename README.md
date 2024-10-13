@@ -22,3 +22,8 @@ When you create new projects, you must **create a new branch**. Create a branch 
 2. At the top of the screen, click on **Create new branch from…**, then click `origin/main`
 3. Type a meaningful name for your branch. For example, `loops` or `task2`.
    - Don't include spaces, symbols (aside from dashes or underscores), or capital letters in the name
+
+## Switch to another project
+
+1. At the bottom of the window, click on the **Source Control** button.
+2. Click on your previous project.
