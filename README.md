@@ -27,5 +27,9 @@ When you create new projects, you must **create a new branch**. Create a branch 
 
 1. At the bottom of the window, click on the **Source Control** button.
 2. Click on your previous project.
+   - If you receive an error, you may need to wait until all your changes in your current branch have been committed and pushed first.
 
-## 
+## Adding project dependencies
+
+1. Open the `Package.swift` file
+2. 
