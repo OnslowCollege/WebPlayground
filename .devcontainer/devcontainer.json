@@ -1,25 +1,22 @@
 {
-    "image": "ghcr.io/onslowcollege/swifttemplate:latest",
+    "image": "swift:6.0-noble",
     "customizations": {
         "vscode": {
             "extensions": [
-                "sswg.swift-lang",
-                "vknabel.vscode-apple-swift-format",
-                "vadimcn.vscode-lldb",
+                "aaron-bond.better-comments",
                 "eamodio.gitlens",
                 "GitHub.vscode-pull-request-github",
-                "yzhang.markdown-all-in-one",
+                "jdsteinbach.custom-presentation-mode",
                 "hediet.vscode-drawio",
                 "oderwat.indent-rainbow",
+                "seunlanlege.action-buttons",
+                "sswg.swift-lang",
                 "usernamehw.errorlens",
-                "aaron-bond.better-comments",
+                "vadimcn.vscode-lldb",
                 "vsls-contrib.gitdoc",
-                "seunlanlege.action-buttons"
+                "yzhang.markdown-all-in-one"
             ],
             "settings": {
-                "apple-swift-format.path": [
-                    "/root/.mint/bin/swift-format"
-                ],
                 "gitlens.showWhatsNewAfterUpgrades": false,
                 "gitlens.showWelcomeOnInstall": false,
                 "editor.wordWrap": "on",
@@ -47,33 +44,52 @@
                     "commands": [
                         {
                             "cwd": "${workspaceFolder}",
-                            "name": "$(run-all) Run",
+                            "name": "$(run-all)",
+                            "tooltip": "Build and run",
                             "useVsCodeApi": true,
                             "command": "workbench.action.debug.start"
                         },
                         {
-                            "cwd": "{workspaceFolder}",
-                            "name": "$(pencil) Reformat",
-                            "useVsCodeApi": true,
-                            "command": "editor.action.formatDocument"
+                            "cwd": "${workspaceFolder}",
+                            "name": "$(pencil)",
+                            "tooltip": "Format",
+                            "useVsCodeApi": false,
+                            "command": "swift package plugin --allow-writing-to-package-directory swiftformat"
                         },
                         {
-                            "name": "$(terminal-view-icon) New Term",
+                            "name": "$(terminal-view-icon)",
+                            "tooltip": "New Terminal",
                             "useVsCodeApi": true,
                             "command": "workbench.action.terminal.newInActiveWorkspace"
                         },
                         {
-                            "name": "$(terminal-kill) Kill Terms",
+                            "name": "$(terminal-kill)",
+                            "tooltip": "Kill All Terminals",
                             "useVsCodeApi": true,
                             "command": "workbench.action.terminal.killAll"
+                        },
+                        {
+                            "name": "$(eye)",
+                            "tooltip": "Kaiako Mode",
+                            "useVsCodeApi": true,
+                            "command": "extension.customPresentationMode"
                         }
                     ],
                     "defaultColor": "none",
                     "reloadButton": "↻",
                     "loadNpmCommands": false
+                },
+                "customPresentationMode.backup": {
+                    "editor.fontSize": 16,
+                    "terminal.fontSize": 16
+                },
+                "customPresentationMode.overrides": {
+                    "editor.fontSize": 24,
+                    "terminal.integrated.fontSize": 24,
+                    "workbench.colorTheme": "Default Light Modern",
+                    "editor.fontWeight": "normal"
                 }
             }
         }
-    },
-    "postCreateCommand": "python3 fixpaths.py && rm fixpaths.py"
+    }
 }
