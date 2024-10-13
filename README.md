@@ -33,4 +33,18 @@ When you create new projects, you must **create a new branch**. Create a branch 
 
 1. Open the `Package.swift` file
 2. Add your dependency line to the `dependencies` array.
-3. Add the dependency to the `targets` se
+   ```swift
+   dependencies: [
+      .package(url: "https://github.com/owner/MyDependency.git", from: "1.0.0")
+   ]
+   ```
+3. Add the dependency to the `targets` section.
+   ```swift
+   .executableTarget(
+      name: "Program",
+      dependencies: [
+         "MyDependency",
+      ]
+   )
+   ```
+4. Save the file.
