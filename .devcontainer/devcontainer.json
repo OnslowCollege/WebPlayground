@@ -3,17 +3,18 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "sswg.swift-lang",
-                "vadimcn.vscode-lldb",
+                "aaron-bond.better-comments",
                 "eamodio.gitlens",
                 "GitHub.vscode-pull-request-github",
-                "yzhang.markdown-all-in-one",
+                "jdsteinbach.custom-presentation-mode",
                 "hediet.vscode-drawio",
                 "oderwat.indent-rainbow",
+                "seunlanlege.action-buttons",
+                "sswg.swift-lang",
                 "usernamehw.errorlens",
-                "aaron-bond.better-comments",
+                "vadimcn.vscode-lldb",
                 "vsls-contrib.gitdoc",
-                "seunlanlege.action-buttons"
+                "yzhang.markdown-all-in-one"
             ],
             "settings": {
                 "gitlens.showWhatsNewAfterUpgrades": false,
@@ -43,28 +44,33 @@
                     "commands": [
                         {
                             "cwd": "${workspaceFolder}",
-                            "name": "$(run-all) Run",
+                            "name": "$(run-all)",
+                            "tooltip": "Build and run",
                             "useVsCodeApi": true,
                             "command": "workbench.action.debug.start"
                         },
                         {
                             "cwd": "${workspaceFolder}",
-                            "name": "$(pencil) Reformat",
+                            "name": "$(pencil)",
+                            "tooltip": "Format",
                             "useVsCodeApi": false,
                             "command": "swift package plugin --allow-writing-to-package-directory swiftformat"
                         },
                         {
-                            "name": "$(terminal-view-icon) New Term",
+                            "name": "$(terminal-view-icon)",
+                            "tooltip": "New Terminal",
                             "useVsCodeApi": true,
                             "command": "workbench.action.terminal.newInActiveWorkspace"
                         },
                         {
-                            "name": "$(terminal-kill) Kill Terms",
+                            "name": "$(terminal-kill)",
+                            "tooltip": "Kill All Terminals",
                             "useVsCodeApi": true,
                             "command": "workbench.action.terminal.killAll"
                         },
                         {
-                            "name": "$(eye) Kaiako Mode",
+                            "name": "$(eye)",
+                            "tooltip": "Kaiako Mode",
                             "useVsCodeApi": true,
                             "command": "extension.customPresentationMode"
                         }
