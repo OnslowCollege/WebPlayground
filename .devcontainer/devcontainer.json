@@ -62,14 +62,28 @@
                             "name": "$(terminal-kill) Kill Terms",
                             "useVsCodeApi": true,
                             "command": "workbench.action.terminal.killAll"
+                        },
+                        {
+                            "name": "$(eye) Kaiako Mode",
+                            "useVsCodeApi": true,
+                            "command": "extension.customPresentationMode"
                         }
                     ],
                     "defaultColor": "none",
                     "reloadButton": "↻",
                     "loadNpmCommands": false
+                },
+                "customPresentationMode.backup": {
+                    "editor.fontSize": 16,
+                    "terminal.fontSize": 16
+                },
+                "customPresentationMode.overrides": {
+                    "editor.fontSize": 24,
+                    "terminal.integrated.fontSize": 24,
+                    "workbench.colorTheme": "Default Light Modern",
+                    "editor.fontWeight": "normal"
                 }
             }
         }
-    },
-    "postCreateCommand": "python3 fixpaths.py && rm fixpaths.py"
+    }
 }
