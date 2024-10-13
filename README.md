@@ -38,7 +38,7 @@ When you create new projects, you must **create a new branch**. Create a branch 
       .package(url: "https://github.com/owner/MyDependency.git", from: "1.0.0")
    ]
    ```
-3. Add the dependency to the `targets` section.
+3. Add the dependency to the `dependencies` array in the `targets`.
    ```swift
    .executableTarget(
       name: "Program",
