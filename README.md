@@ -47,4 +47,8 @@ When you create new projects, you must **create a new branch**. Create a branch 
       ]
    )
    ```
-4. Save the file.
+4. Save the file. Swift will detect the changes and automatically download the new package; you will then be able to import the package in your code.
+   ```swift
+   import Foundation
+   import MyDependency
+   ```
