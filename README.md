@@ -32,4 +32,5 @@ When you create new projects, you must **create a new branch**. Create a branch 
 ## Adding project dependencies
 
 1. Open the `Package.swift` file
-2. 
+2. Add your dependency line to the `dependencies` array.
+3. Add the dependency to the `targets` se
