@@ -52,9 +52,9 @@
                         {
                             "cwd": "${workspaceFolder}",
                             "name": "$(pencil)",
-                            "tooltip": "Format",
-                            "useVsCodeApi": false,
-                            "command": "swift package plugin --allow-writing-to-package-directory swiftformat"
+                            "tooltip": "Format document",
+                            "useVsCodeApi": true,
+                            "command": "editor.action.formatDocument"
                         },
                         {
                             "name": "$(terminal-view-icon)",
