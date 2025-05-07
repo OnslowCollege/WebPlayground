@@ -1,5 +1,5 @@
 {
-    "image": "swift:6.0-noble",
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -10,11 +10,10 @@
                 "hediet.vscode-drawio",
                 "oderwat.indent-rainbow",
                 "seunlanlege.action-buttons",
-                "sswg.swift-lang",
                 "usernamehw.errorlens",
-                "vadimcn.vscode-lldb",
                 "vsls-contrib.gitdoc",
-                "yzhang.markdown-all-in-one"
+                "yzhang.markdown-all-in-one",
+                "ms-vscode.live-server"
             ],
             "settings": {
                 "gitlens.showWhatsNewAfterUpgrades": false,
@@ -37,18 +36,9 @@
                 },
                 "gitdoc.commitValidationLevel": "none",
                 "gitdoc.enabled": true,
-                "lldb.library": "/usr/lib/liblldb.so",
-                "lldb.launch.expressions": "native",
                 "workbench.colorTheme": "Default Light Modern",
                 "actionButtons": {
                     "commands": [
-                        {
-                            "cwd": "${workspaceFolder}",
-                            "name": "$(run-all)",
-                            "tooltip": "Build and run",
-                            "useVsCodeApi": true,
-                            "command": "workbench.action.debug.start"
-                        },
                         {
                             "cwd": "${workspaceFolder}",
                             "name": "$(pencil)",
